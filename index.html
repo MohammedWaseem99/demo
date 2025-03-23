@@ -1,496 +1,1252 @@
-<!-- Project Structure:
-1. index.html (Home Page)
-2. category.html (Category Page with filters)
-3. book-details.html (Book Details Page)
-4. cart.html (Cart Page)
-5. checkout.html (Checkout Page)
-6. payment-success.html (Payment Success Page)
-7. user-dashboard.html (User Dashboard)
-8. styles.css (Custom styles)
-9. scripts.js (JavaScript functionality)
--->
+<!doctype html>
+<html class="no-js" lang="zxx">
 
-<!-- index.html - HOME PAGE -->
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookHaven - Online Book Store</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Broccoli - Organic Food HTML Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.png in the root directory -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Font Icons css -->
+    <link rel="stylesheet" href="css/font-icons.css">
+    <!-- plugins css -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.7/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <!-- Top Bar -->
-    <div class="bg-dark text-light py-2">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <small><i class="fas fa-phone me-2"></i> +1 (123) 456-7890</small>
-                <small class="ms-3"><i class="fas fa-envelope me-2"></i> support@bookhaven.com</small>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+
+    <!-- HEADER AREA START (header-5) -->
+    <header class="ltn__header-area ltn__header-5 ltn__header-transparent gradient-color-4---">
+        <!-- ltn__header-top-area start -->
+        <div class="ltn__header-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="ltn__top-bar-menu">
+                            <ul>
+                                <li><img src="https://flagcdn.com/w40/lk.png" alt="United States" /> Sri Lanka , Mawanella</li>
+                                <li><i class="icon-call"></i> 077123456789</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="top-bar-right text-right">
+                            <div class="ltn__top-bar-menu">
+                                <ul>
+                                    <li>
+                                        <!-- ltn__language-menu -->
+                                        <div class="ltn__drop-menu ltn__currency-menu ltn__language-menu">
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <!-- ltn__social-media -->
+                                        <div class="ltn__social-media">
+                                            <ul>
+                                                <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                
+                                                <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#" class="text-light me-3 text-decoration-none"><small>Track Order</small></a>
-                <a href="#" class="text-light me-3 text-decoration-none"><small>Help</small></a>
+        </div>
+        <!-- ltn__header-top-area end -->
+
+        <!-- ltn__header-middle-area start -->
+        <div class="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-white sticky-active-into-mobile--- plr--9--- " style="background:  #071c1f;">
+            <div class="container">
+                <div class="row">
+                    <div class="col mr-3">
+                        <div class="site-logo-wrap mr-2">
+                            <div class="site-logo ">
+                                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                       
+                        <div class="col header-menu-column menu-color-white---">
+                            <div class="header-menu d-none d-xl-block">
+                                <nav>
+                                    <div class="ltn__main-menu">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li class="menu-icon"><a href="#">Super Marts</a>
+                                                <ul>
+                                                    <li><a href="about.html">HK</a></li>
+                                                    <li><a href="service.html">Wazby</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li class="menu-icon"><a href="#">Resturants</a>
+                                                <ul>
+                                                    <li><a href="shop.html">Food Yard</a></li>
+                                                    <li><a href="shop-grid.html">Cabana</a></li>
+                                                    <li><a href="shop-left-sidebar.html">Bismillah Night Hotel</a></li>
+                                                    <li><a href="shop-right-sidebar.html">Spicy'n Zilla</a></li>
+                                                    <li><a href="product-details.html">Rollen Me </a></li>
+                                                    <li><a href="cart.html">Burger Hot</a></li>
+                                                    <li><a href="wishlist.html">Street Hut</a></li>
+                                                    <li><a href="checkout.html"></a></li>
+                               
+                                                </ul>
+                                                <li class="menu-icon"><a href="#">Pharmacies</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="about.html">Kandy Medicals</a></li>
+                                                        <li><a href="service.html">keyo me</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-icon"><a href="#">Book Shops</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="about.html">Gateway</a></li>
+                                                        <li><a href="service.html">Nimal Sri</a></li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                           
+                                         
+                                            <li ><a href="moreorders.html">External Orders & Deliveries</a></li>
+                                            <li ><a href="contact.html">Contact</a></li>   
+                                            
+                                           
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="mini-cart-icon">
+                        <a href="#ltn__utilize-cart-menu" class="ltn__utilize-toggle mr-2" style="color: white;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                           
+                        </a>
+                    </div>
+                    <div class="mini-cart-icon">
+                        <a href="#ltn__utilize-cart-menu" class="ltn__utilize-toggle mr-2" style="color: white;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <sup>2</sup>
+                        </a>
+                    </div>
+                    <div class="mobile-menu-toggle d-xl-none" >
+                        <a href="#ltn__utilize-mobile-menu" class="ltn__utilize-toggle" >
+                            <svg viewBox="0 0 800 600">
+                                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top" style="color: white;"></path>
+                                <path d="M300,320 L540,320" id="middle"></path>
+                                <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="ltn__header-options ltn__header-options-2">
+                        <!-- header-search-1 -->
+                        <div class="header-search-wrap">
+                            
+                          
+                        </div>
+                        <!-- user-menu -->
+                        
+                        <!-- mini-cart -->
+                        <div class="mini-cart-icon">
+                            
+                        </div>
+                        <!-- mini-cart -->
+                        <!-- Mobile Menu Button -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ltn__header-middle-area end -->
+    </header>
+    <!-- HEADER AREA END -->
+
+    <!-- Utilize Cart Menu Start -->
+  
+    <!-- Utilize Cart Menu End -->
+
+    <!-- Utilize Mobile Menu Start -->
+    <div id="ltn__utilize-mobile-menu" class="ltn__utilize ltn__utilize-mobile-menu" style="background:  #071c1f; color: white;">
+        <div class="ltn__utilize-menu-inner ltn__scrollbar">
+            <div class="ltn__utilize-menu-head">
+                <div class="site-logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <button class="ltn__utilize-close">×</button>
+            </div>
+           
+            <div class="ltn__utilize-menu">
+                <ul>
+                    <li><a href="#">Home</a>
+                        
+                    </li>
+                    <li><a href="#">Super Marts</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.html">HK</a></li>
+                            <li><a href="service.html">Wazby</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">Resturants</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Food Yard</a></li>
+                            <li><a href="shop-grid.html">Cabana</a></li>
+                            <li><a href="shop-left-sidebar.html">Bismillah Night Hotel</a></li>
+                            <li><a href="shop-right-sidebar.html">Spicy'n Zilla</a></li>
+                            <li><a href="product-details.html">Rollen Me </a></li>
+                            <li><a href="cart.html">Burger Hot</a></li>
+                            <li><a href="wishlist.html">Street Hut</a></li>
+                            <li><a href="checkout.html"></a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="#">Pharmacies</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.html">Kandy Medicals</a></li>
+                            <li><a href="service.html">keyo me</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">Book Shops</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.html">Gateway</a></li>
+                            <li><a href="service.html">Nimal Sri</a></li>
+                            
+                        </ul>
+                    </li>
+                    
+                   
+                    
+                    <li><a href="contact.html">External Orders & Deliveries</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+           
+            <div class="ltn__social-media-2">
+                <ul>
+                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Utilize Mobile Menu End -->
+
+    <div class="ltn__utilize-overlay"></div>
+
+    <!-- SLIDER AREA START (slider-3) -->
+    <div class="ltn__slider-area ltn__slider-3  section-bg-1">
+        <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1">
+            <!-- ltn__slide-item -->
+            <div class="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3">
+                <div class="ltn__slide-item-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 align-self-center">
+                                <div class="slide-item-info">
+                                    <div class="slide-item-info-inner ltn__slide-animation">
+                                        <div class="slide-video mb-50 d-none">
+                                            <a class="ltn__video-icon-2 ltn__video-icon-2-border" href="https://www.youtube.com/embed/ATI7vfCgwXE?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                        </div>
+                                        
+                                        <h1 class="slide-title animated ">Visit Your Home Town <br> by <strong> ONE TOUCH</strong> from your seat.  </h1>
+                                        <div class="slide-brief animated d-none">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                        </div>
+                                        <div class="btn-wrapper animated">
+                                            <a href="shop.html" class="theme-btn-1 btn btn-effect-1 text-uppercase">Explore Shops</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item-img">
+                                    <img src=img/icons/icon-img/002.jpg alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ltn__slide-item -->
+            <div class="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3">
+                <div class="ltn__slide-item-inner  text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 align-self-center">
+                                <div class="slide-item-info">
+                                    <div class="slide-item-info-inner ltn__slide-animation">
+                                        <h6 class="slide-sub-title animated"><img src="img/icons/icon-img/03.jpg" alt="#"> </h6>
+                                        <h1 class="slide-title animated ">With In 30 Minutes <br> </h1>
+                                        <div class="slide-brief animated">
+                                            <p>Your Favorite Food & Essential goods in Your Hometown</p>
+                                        </div>
+                                        <div class="btn-wrapper animated">
+                                            <a href="shop.html" class="theme-btn-1 btn btn-effect-1 text-uppercase">Explore Shops</a>
+                                            <a href="about.html" class="btn btn-transparent btn-effect-3 text-uppercase">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item-img slide-img-left">
+                                    <img src="img/slider/02 (2).jpg" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <!-- SLIDER AREA END -->
+
+    <!-- FEATURE AREA START ( Feature - 3) -->
+    <div class="ltn__feature-area mt-100 mt--65">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__feature-item-box-wrap ltn__feature-item-box-wrap-2 ltn__border section-bg-6">
+                        <div class="ltn__feature-item ltn__feature-item-8">
+                            <div class="ltn__feature-icon">
+                                <i class="fa-regular fa-clock fa-beat-fade" style="color:#80b500;"></i>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h4>ON TIME DELIVERY</h4>
+                                <p>Door drop with in 30 Minutes</p>
+                            </div>
+                        </div>
+                        <div class="ltn__feature-item ltn__feature-item-8">
+                            <div class="ltn__feature-icon">
+                                <i class="fa-solid fa-shield fa-beat-fade" style="color: #80b500;"></i>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h4>Safe packaging</h4>
+                                <p>"Protecting products with care."</p>
+                            </div>
+                        </div>
+                        <div class="ltn__feature-item ltn__feature-item-8">
+                            <div class="ltn__feature-icon">
+                                <i class="fa-solid fa-hand-holding-dollar fa-beat-fade" style="color: #80b500;"></i>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h4>Cost-effective Charges</h4>
+                                <p>"Affordable, Reliable Delivery"</p>
+                            </div>
+                        </div>
+                        <div class="ltn__feature-item ltn__feature-item-8">
+                            <div class="ltn__feature-icon">
+                                <i class="fa-solid fa-truck-fast fa-beat-fade" style="color: #80b500;"></i>
+                            </div>
+                            <div class="ltn__feature-info">
+                                <h4>Special  Delivery Offers</h4>
+                                <p>"Enjoy affordable shipping deals"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURE AREA END -->
+
+     <!-- BANNER AREA START -->
+     <div class="ltn__banner-area mt-120 mt--90 d-none">
+        <div class="container">
+            <div class="row ltn__custom-gutter--- justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="ltn__banner-item">
+                        <div class="ltn__banner-img">
+                            <a href="shop.html"><img src="img/banner/1.jpg" alt="Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="ltn__banner-item">
+                        <div class="ltn__banner-img">
+                            <a href="shop.html"><img src="img/banner/2.jpg" alt="Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="ltn__banner-item">
+                        <div class="ltn__banner-img">
+                            <a href="shop.html"><img src="img/banner/1.jpg" alt="Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER AREA END -->
+
+    <!-- BANNER AREA START -->
+    <div class="ltn__banner-area mt-120">
+        <div class="container">
+            <div class="row ltn__custom-gutter--- justify-content-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="ltn__banner-item">
+                        <div class="ltn__banner-img">
+                            <a href="shop.html"><img src="img/banner/13.png" alt="Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ltn__banner-item">
+                                <div class="ltn__banner-img">
+                                    <a href="shop.html"><img src="img/banner/14.png" alt="Banner Image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="ltn__banner-item">
+                                <div class="ltn__banner-img">
+                                    <a href="shop.html"><img src="img/banner/15.png" alt="Banner Image"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Header/Navigation -->
-    <header class="bg-white shadow-sm sticky-top">
+    <!-- ABOUT US AREA START -->
+    <div class="ltn__about-us-area pt-120 pb-120">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
-                <a class="navbar-brand" href="index.html">BookHaven</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Categories
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- Children Category -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="category.html?category=children">Children</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=children&subcategory=picture-books">Picture Books</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=children&subcategory=picture-books&subsubcategory=fairy-tales">Fairy Tales</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=children&subcategory=picture-books&subsubcategory=learning-books">Learning Books</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=children&subcategory=young-adult">Young Adult</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=children&subcategory=young-adult&subsubcategory=teen-fiction">Teen Fiction</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=children&subcategory=educational">Educational</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=children&subcategory=educational&subsubcategory=learning-books">Learning Books</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-img-wrap about-img-left">
+                        <img src=img/icons/icon-img/003.jpg alt="About Us Image">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-info-wrap">
+                        <div class="section-title-area ltn__section-title-2">
+                            <h6 class="section-subtitle ltn__secondary-color">Know More About Our Service</h6>
+                            <h1 class="section-title">Easy Order &<br class="d-none d-md-block">  On Time Delivery</h1>
+                            <p> 
+                                At our service, we understand that your time is valuable. That's why we've made it our mission to provide an effortless ordering experience in your home town <strong>Mawanella</strong> , allowing you to browse and select from a <strong>wide range of products</strong> in just a few simple steps. Our user-friendly platform ensures that you can place <strong>your order quickly and easily</strong>, whether you're at home or on the go.  
                                 
-                                <!-- Local Syllabus Category -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="category.html?category=local-syllabus">Local Syllabus</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=local-syllabus&subcategory=english">English</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=english&subsubcategory=grade-01">Grade 01</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=english&subsubcategory=grade-02">Grade 02</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=english&subsubcategory=grade-03">Grade 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=local-syllabus&subcategory=tamil">Tamil</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=tamil&subsubcategory=grade-01">Grade 01</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=tamil&subsubcategory=grade-02">Grade 02</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=tamil&subsubcategory=grade-03">Grade 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=local-syllabus&subcategory=sinhala">Sinhala</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=sinhala&subsubcategory=grade-01">Grade 01</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=sinhala&subsubcategory=grade-02">Grade 02</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=local-syllabus&subcategory=sinhala&subsubcategory=grade-03">Grade 03</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                                But we don’t stop there. We recognize that timely delivery is just as important as a smooth ordering process. Our dedicated team works tirelessly to ensure that your orders are dispatched swiftly and arrive at your doorstep on schedule. With us, you can enjoy peace of mind knowing that your purchases will be in your hands when you need them most. Trust in our commitment to convenience and reliability, making your shopping experience as seamless as possible!
+
                                 
-                                <!-- International Syllabus Category -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="category.html?category=international-syllabus">International Syllabus</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=international-syllabus&subcategory=english">English</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=english&subsubcategory=grade-01">Grade 01</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=english&subsubcategory=grade-02">Grade 02</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=english&subsubcategory=grade-03">Grade 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=international-syllabus&subcategory=tamil">Tamil</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=tamil&subsubcategory=grade-01">Grade 01</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=tamil&subsubcategory=grade-02">Grade 02</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=tamil&subsubcategory=grade-03">Grade 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=international-syllabus&subcategory=sinhala">Sinhala</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=sinhala&subsubcategory=grade-01">Grade 01</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=sinhala&subsubcategory=grade-02">Grade 02</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=international-syllabus&subcategory=sinhala&subsubcategory=grade-03">Grade 03</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
                                 
-                                <!-- Islamic Category -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="category.html?category=islamic">Islamic</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=islamic&subcategory=english">English</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=english&subsubcategory=fairy-tales">Fairy Tales</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=english&subsubcategory=teen-fiction">Teen Fiction</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=english&subsubcategory=learning-books">Learning Books</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=islamic&subcategory=tamil">Tamil</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=tamil&subsubcategory=fairy-tales">Fairy Tales</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=tamil&subsubcategory=teen-fiction">Teen Fiction</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=tamil&subsubcategory=learning-books">Learning Books</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=islamic&subcategory=sinhala">Sinhala</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=sinhala&subsubcategory=fairy-tales">Fairy Tales</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=sinhala&subsubcategory=teen-fiction">Teen Fiction</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=islamic&subcategory=sinhala&subsubcategory=learning-books">Learning Books</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                                <!-- Novels Category -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="category.html?category=novels">Novels</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=novels&subcategory=english">English</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=english&subsubcategory=history">History</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=english&subsubcategory=politics">Politics</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=english&subsubcategory=biography">Biography</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=novels&subcategory=tamil">Tamil</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=tamil&subsubcategory=history">History</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=tamil&subsubcategory=politics">Politics</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=tamil&subsubcategory=biography">Biography</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="category.html?category=novels&subcategory=sinhala">Sinhala</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=sinhala&subsubcategory=history">History</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=sinhala&subsubcategory=politics">Politics</a></li>
-                                                <li><a class="dropdown-item" href="category.html?category=novels&subcategory=sinhala&subsubcategory=biography">Biography</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                               </p>
+                        </div>
+                        <p> Finally, our <strong>  Customer support team</strong> is available around the clock to address any questions or concerns, making sure that any special requests or unexpected situations are handled promptly. Together, these delivery features create a seamless, efficient, and secure process that prioritizes your peace of mind..</p>
+                        <div class="about-author-info d-flex">
+                            <div class="author-name-designation  align-self-center mr-30">
+                                <h4 class="mb-0">Hamdi Ahamed</h4>
+                                <small>  Director</small>
+                            </div>
+                            <div class="author-sign  align-self-center">
+                                <img src="img/icons/icon-img/author-sign.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT US AREA END -->
+    
+    <!-- CATEGORY AREA START -->
+   
+    <!-- CATEGORY AREA END -->
+
+    <!-- PRODUCT TAB AREA START (product-item-3) -->
+    <div class="ltn__product-tab-area ltn__product-gutter pt-115 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2 text-center">
+                        <h1 class="section-title">OUR PARTNERS
+
+                        </h1>
+                    </div>
+                    <div class="ltn__tab-menu ltn__tab-menu-2 ltn__tab-menu-top-right-- text-uppercase text-center">
+                        <div class="nav">
+                            <a class="active show" data-toggle="tab" href="#liton_tab_3_1">Super Marts</a>
+                            <a data-toggle="tab" href="#liton_tab_3_2" class="">Resturants</a>
+                            <a data-toggle="tab" href="#liton_tab_3_3" class="">Pharmacies</a>
+                            <a data-toggle="tab" href="#liton_tab_3_4" class="">Book Shops</a>
+                            <a data-toggle="tab" href="#liton_tab_3_5" class="">-----------</a>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="liton_tab_3_1">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+                                    <!-- ltn__product-item -->
+                                    <div class="col-lg-12">
+                                        <div class="ltn__product-item ltn__product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product/11.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-ratting">
+                                                    
+                                                </div>
+                                                <h2 class="product-title"><a href="product-details.html">HK LANKA</a></h2>
+                                                <div class="product-price">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="liton_tab_3_2">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+                                    <!-- ltn__product-item -->
+                                    <div class="col-lg-12">
+                                        <div class="ltn__product-item ltn__product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product/16.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                               
+                                                <h2 class="product-title"><a href="product-details.html">BURGER HOT </a></h2>
+                                                <div class="product-price">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="liton_tab_3_3">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+                                    <!-- ltn__product-item -->
+                                    <div class="col-lg-12">
+                                        <div class="ltn__product-item ltn__product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product/6.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                       
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal1">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                
+                                                <h2 class="product-title"><a href="product-details.html">KANDY MEDICALS</a></h2>
+                                                <div class="product-price">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ltn__modal-area ltn__quick-view-modal-area">
+                            <div class="modal fade" id="quick_view_modal1" tabindex="-1">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                <!-- <i class="fas fa-times"></i> -->
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" id="phar">
+                                             <div class="ltn__quick-view-modal-inner">
+                                                 <div class="modal-product-item">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="modal-product-img">
+                                                                <img src="img/product/4.png" alt="#">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="modal-product-info">
+                                                                <div class="product-ratting">
+                                                                    <ul>
+                                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                                <h3>KANDY MEDICALS</h3>
+                                                                <div class="ltn__product-details-menu-3">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#" class="" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                                               
+                                                                                <span>Send your <strong> Doctor medicine reciept photo </strong> through the "Send Reciept" </span>
+                                                                            </a>
+                                                                        </li>
+                                                                       
+                                                                    </ul>
+                                                                </div>
+                                                                
+                                                                <div class="modal-product-meta ltn__product-details-menu-1">
+                                                                    
+                                                                </div>
+                                                                <div class="ltn__product-details-menu-2">
+                                                                    <ul>
+                                                                        <li>
+                                                                           
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" class="theme-btn-1 btn btn-effect-1" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                                               
+                                                                                <span>Send Reciept</span>
+                                                                                <i class="fas fa-upload"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                               
+                                                                <hr>
+                                                                <div class="ltn__social-media">
+                                                                    <ul>
+                                                                        <li>Location : Mawanella Town</li>
+                                                                        
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="liton_tab_3_4">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+                                    <!-- ltn__product-item -->
+                                    <div class="col-lg-12">
+                                        <div class="ltn__product-item ltn__product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product/3.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                     
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-ratting">
+                                                   
+                                                </div>
+                                                <h2 class="product-title"><a href="product-details.html">GATEWAY</a></h2>
+                                                <div class="product-price">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="liton_tab_3_5">
+                            <div class="ltn__product-tab-content-inner">
+                                <div class="row ltn__tab-product-slider-one-active slick-arrow-1">
+                                    <!-- ltn__product-item -->
+                                    <div class="col-lg-12">
+                                        <div class="ltn__product-item ltn__product-item-3 text-center">
+                                            <div class="product-img">
+                                                <a href="product-details.html"><img src="img/product/7.png" alt="#"></a>
+                                                <div class="product-badge">
+                                                    <ul>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="product-hover-action">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Quick View" data-toggle="modal" data-target="#quick_view_modal">
+                                                                <i class="far fa-eye"></i>
+                                                            </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-ratting">
+                                                   
+                                                </div>
+                                                <h2 class="product-title"><a href="product-details.html">--------</a></h2>
+                                                <div class="product-price">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT TAB AREA END -->
+
+    <!-- COUNTER UP AREA START -->
+    <div class="ltn__counterup-area bg-image bg-overlay-theme-black-80 pt-115 pb-70" data-bg="img/icons/icon-img/005.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 align-self-center">
+                    <div class="ltn__counterup-item-3 text-color-white text-center">
+                        <div class="counter-icon"> <img src="img/icons/icon-img/(2).png" alt="#"> </div>
+                        <h1><span class="counter">2500</span><span class="counterUp-icon">+</span> </h1>
+                        <h6>Happy Customers</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 align-self-center">
+                    <div class="ltn__counterup-item-3 text-color-white text-center">
+                        <div class="counter-icon"> <img src="img/icons/icon-img/01.png" alt="#"> </div>
+                        <h1><span class="counter">50</span><span class="counterUp-letter"></span><span class="counterUp-icon">+</span> </h1>
+                        <h6>Shops</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 align-self-center">
+                    <div class="ltn__counterup-item-3 text-color-white text-center">
+                        <div class="counter-icon"> <img src="img/icons/icon-img/02.png" alt="#"> </div>
+                        <h1><span class="counter">2400</span><span class="counterUp-icon">+</span> </h1>
+                        <h6>5 Star Rating</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 align-self-center">
+                    <div class="ltn__counterup-item-3 text-color-white text-center">
+                        <div class="counter-icon"> <img src="img/icons/icon-img/03.png" alt="#"> </div>
+                        <h1><span class="counter">5000</span><span class="counterUp-icon">LKR</span> </h1>
+                        <h6> Valuable Gift Vouchers</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COUNTER UP AREA END -->
+
+    <!-- PRODUCT AREA START (product-item-3) -->
+    
+    <!-- PRODUCT AREA END -->
+
+    <!-- CALL TO ACTION START (call-to-action-4) -->
+    <div class="ltn__call-to-action-area ltn__call-to-action-4 bg-image pt-115 pb-120" data-bg="img/bg/06.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="call-to-action-inner call-to-action-inner-4 text-center">
+                        <div class="section-title-area ltn__section-title-2">
+                            <h6 class="section-subtitle ltn__secondary-color"> MORE EXRANEL ORDER & DELIVERIES</h6>
+                            <h1 class="section-title white-color">077123456789</h1>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a href="tel:+123456789" class="theme-btn-1 btn btn-effect-1">MAKE A CALL</a>
+                            <a href="contact.html" class="btn btn-transparent btn-effect-4 white-color">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ltn__call-to-4-img-1">
+            <img src="img/bg/06.jpg" alt="#">
+        </div>
+        <div class="ltn__call-to-4-img-2">
+            <img src="img/bg/11.png" alt="#">
+        </div>
+    </div>
+    <!-- CALL TO ACTION END -->
+
+    <!-- BLOG AREA START (blog-3) -->
+    
+    <!-- BLOG AREA END -->
+
+    <!-- FEATURE AREA START ( Feature - 3) -->
+    <div class="ltn__feature-area before-bg-bottom-2-- mb--30--- plr--5 mb-120">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__feature-item-box-wrap ltn__border-between-column white-bg">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="ltn__feature-item ltn__feature-item-8">
+                                    <div class="ltn__feature-icon">
+                                        <img src="img/icons/icon-img/11.png" alt="#">
+                                    </div>
+                                    <div class="ltn__feature-info">
+                                        <h4>Curated Products</h4>
+                                        <p>Provide Curated Products for
+                                            all product over $100</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="ltn__feature-item ltn__feature-item-8">
+                                    <div class="ltn__feature-icon">
+                                        <img src="img/icons/icon-img/12.png" alt="#">
+                                    </div>
+                                    <div class="ltn__feature-info">
+                                        <h4>Handmade</h4>
+                                        <p>We ensure the product quality
+                                            that is our main goal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="ltn__feature-item ltn__feature-item-8">
+                                    <div class="ltn__feature-icon">
+                                        <img src="img/icons/icon-img/13.png" alt="#">
+                                    </div>
+                                    <div class="ltn__feature-info">
+                                        <h4>Natural Food</h4>
+                                        <p>Return product within 3 days
+                                            for any product you buy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="ltn__feature-item ltn__feature-item-8">
+                                    <div class="ltn__feature-icon">
+                                        <img src="img/icons/icon-img/14.png" alt="#">
+                                    </div>
+                                    <div class="ltn__feature-info">
+                                        <h4>Free home delivery</h4>
+                                        <p>We ensure the product quality
+                                            that you can trust easily</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURE AREA END -->
+
+    <!-- FOOTER AREA START -->
+    <footer class="ltn__footer-area  ">
+        <div class="footer-top-area  section-bg-2 plr--5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-about-widget">
+                            <div class="footer-logo">
+                                <div class="site-logo">
+                                    <img src="img/logo-2.png" alt="Logo">
+                                </div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+                            <div class="footer-address">
+                                <ul>
+                                    <li>
+                                        <div class="footer-address-icon">
+                                            <i class="icon-placeholder"></i>
+                                        </div>
+                                        <div class="footer-address-info">
+                                            <p>Sri Lanka , Mawanella</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-address-icon">
+                                            <i class="icon-call"></i>
+                                        </div>
+                                        <div class="footer-address-info">
+                                            <p><a href="tel:+0123-456789">+0123-456789</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-address-icon">
+                                            <i class="icon-mail"></i>
+                                        </div>
+                                        <div class="footer-address-info">
+                                            <p><a href="mailto:example@example.com">example@example.com</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ltn__social-media mt-20">
+                                <ul>
+                                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-menu-widget clearfix">
+                            <h4 class="footer-title">Company</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    
+                                    
+                                    <li><a href="contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-menu-widget clearfix">
+                            <h4 class="footer-title">Services.</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="order-tracking.html">Delivery</a></li>
+                                    <li><a href="login.html">24 * 7 Service</a></li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-menu-widget clearfix">
+                            <h4 class="footer-title">Customer Care</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    
+                                    <li><a href="account.html">Hot Line: 07712345678</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ltn__copyright-area ltn__copyright-2 section-bg-2 ltn__border-top-2 plr--5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="ltn__copyright-design clearfix">
+                            <p>All Rights Reserved @ Alpha-S Solutions <span class="current-year"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 align-self-center">
+                        <div class="ltn__copyright-menu text-right">
+                            <ul>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Claim</a></li>
+                                <li><a href="#">Privacy & Policy</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="bestsellers.html">Bestsellers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="new-releases.html">New Releases</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex align-items-center">
-                        <a href="user-dashboard.html" class="btn btn-outline-primary me-2">
-                            <i class="fas fa-user me-2"></i>Account
-                        </a>
-                        <a href="cart.html" class="btn btn-primary position-relative">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                3
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Discover Your Next Favorite Book</h1>
-                    <p class="lead mb-4">Explore our vast collection of books across various categories. From bestsellers to rare finds, we have something for every reader.</p>
-                    <div class="search-bar mb-4">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search by title, author, or ISBN" aria-label="Search">
-                            <button class="btn btn-primary" type="submit">Search</button>
-                        </form>
-                    </div>
-                    <a href="category.html" class="btn btn-light me-2">Explore Categories</a>
-                    <a href="bestsellers.html" class="btn btn-outline-light">Bestsellers</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="/api/placeholder/600/400" alt="Books collection" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Categories -->
-    <section class="featured-section">
-        <div class="container">
-            <h2 class="section-title">Browse Categories</h2>
-            <div class="row g-4">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <a href="category.html?category=children" class="text-decoration-none">
-                        <div class="card category-card">
-                            <img src="/api/placeholder/300/200" class="card-img" alt="Children Books">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Children</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <a href="category.html?category=local-syllabus" class="text-decoration-none">
-                        <div class="card category-card">
-                            <img src="/api/placeholder/300/200" class="card-img" alt="Local Syllabus">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Local Syllabus</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <a href="category.html?category=international-syllabus" class="text-decoration-none">
-                        <div class="card category-card">
-                            <img src="/api/placeholder/300/200" class="card-img" alt="International Syllabus">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">International Syllabus</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <a href="category.html?category=islamic" class="text-decoration-none">
-                        <div class="card category-card">
-                            <img src="/api/placeholder/300/200" class="card-img" alt="Islamic Books">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Islamic</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <a href="category.html?category=novels" class="text-decoration-none">
-                        <div class="card category-card">
-                            <img src="/api/placeholder/300/200" class="card-img" alt="Novels">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Novels</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <a href="category.html" class="text-decoration-none">
-                        <div class="card category-card">
-                            <img src="/api/placeholder/300/200" class="card-img" alt="View All Categories">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">View All</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Books -->
-    <section class="featured-section bg-light">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="section-title mb-0">Featured Books</h2>
-                <a href="category.html" class="btn btn-link text-decoration-none">View All</a>
-            </div>
-            <div class="row g-4">
-                <!-- Book 1 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card book-card">
-                        <div class="position-absolute top-0 end-0 p-2">
-                            <span class="badge bg-danger">20% OFF</span>
-                        </div>
-                        <img src="/api/placeholder/400/600" class="card-img-top" alt="Book Cover">
-                        <div class="card-body">
-                            <h5 class="card-title">The Silent Patient</h5>
-                            <p class="author mb-1">by Alex Michaelides</p>
-                            <div class="rating mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="ms-1">4.5</span>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="price">$12.99</span>
-                                    <span class="original-price ms-2">$16.99</span>
-                                </div>
-                                <a href="book-details.html?id=1" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Book 2 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card book-card">
-                        <img src="/api/placeholder/400/600" class="card-img-top" alt="Book Cover">
-                        <div class="card-body">
-                            <h5 class="card-title">Where the Crawdads Sing</h5>
-                            <p class="author mb-1">by Delia Owens</p>
-                            <div class="rating mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span class="ms-1">5.0</span>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="price">$14.99</span>
-                                </div>
-                                <a href="book-details.html?id=2" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Book 3 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card book-card">
-                        <div class="position-absolute top-0 end-0 p-2">
-                            <span class="badge bg-primary">New</span>
-                        </div>
-                        <img src="/api/placeholder/400/600" class="card-img-top" alt="Book Cover">
-                        <div class="card-body">
-                            <h5 class="card-title">Educated: A Memoir</h5>
-                            <p class="author mb-1">by Tara Westover</p>
-                            <div class="rating mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <span class="ms-1">4.0</span>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="price">$13.99</span>
-                                </div>
-                                <a href="book-details.html?id=3" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Book 4 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card book-card">
-                        <img src="/api/placeholder/400/600" class="card-img-top" alt="Book Cover">
-                        <div class="card-body">
-                            <h5 class="card-title">The Alchemist</h5>
-                            <p class="author mb-1">by Paulo Coelho</p>
-                            <div class="rating mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="ms-1">4.5</span>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="price">$9.99</span>
-                                </div>
-                                <a href="book-details.html?id=4" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+    <!-- FOOTER AREA END -->
 
-    <!-- New Arrivals -->
-    <section class="featured-section">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="section-title mb-0">New Arrivals</h2>
-                <a href="new-releases.html" class="btn btn-link text-decoration-none">View All</a>
-            </div>
-            <div class="row g-4">
-                <!-- Book 1 -->
-                <div class="col-6 col-md-4 col-lg-3">
-                    <div class="card book-card">
-                        <div class="position-absolute top-0 end-0 p-2">
-                            <span class="badge bg-primary">New</span>
-                        </div>
-                        <img src="/api/placeholder/400/600" class="card-img-top" alt="Book Cover">
-                        <div class="card-body">
-                            <h5 class="card-title">The Midnight Library</h5>
-                            <p class="author mb-1">by Matt Haig</p>
-                            <div class="rating mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="ms-1">4.5</span>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="price">$14.99</span>
+    <!-- MODAL AREA START (Quick View Modal) -->
+    <div class="ltn__modal-area ltn__quick-view-modal-area">
+        <div class="modal fade" id="quick_view_modal" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            <!-- <i class="fas fa-times"></i> -->
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="ltn__quick-view-modal-inner">
+                             <div class="modal-product-item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="modal-product-img">
+                                            <img src="img/product/4.png" alt="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="modal-product-info">
+                                            <div class="product-ratting">
+                                                <ul>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-star"></i></a></li>
+                                                    <li class="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+                                                </ul>
+                                            </div>
+                                            <h3>Vegetables Juices</h3>
+                                            <div class="product-price">
+                                                <span>$149.00</span>
+                                                <del>$165.00</del>
+                                            </div>
+                                            <div class="modal-product-meta ltn__product-details-menu-1">
+                                                <ul>
+                                                    <li>
+                                                        <strong>Categories:</strong> 
+                                                        <span>
+                                                            <a href="#">Parts</a>
+                                                            <a href="#">Car</a>
+                                                            <a href="#">Seat</a>
+                                                            <a href="#">Cover</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ltn__product-details-menu-2">
+                                                <ul>
+                                                    <li>
+                                                        <div class="cart-plus-minus">
+                                                            <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="theme-btn-1 btn btn-effect-1" title="Add to Cart" data-toggle="modal" data-target="#add_to_cart_modal">
+                                                            <i class="fas fa-shopping-cart"></i>
+                                                            <span>ADD TO CART</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ltn__product-details-menu-3">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="" title="Wishlist" data-toggle="modal" data-target="#liton_wishlist_modal">
+                                                            <i class="far fa-heart"></i>
+                                                            <span>Add to Wishlist</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="" title="Compare" data-toggle="modal" data-target="#quick_view_modal">
+                                                            <i class="fas fa-exchange-alt"></i>
+                                                            <span>Compare</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="ltn__social-media">
+                                                <ul>
+                                                    <li>Share:</li>
+                                                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                                    <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="book-details.html?id=5" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
+                             </div>
+                         </div>
                     </div>
                 </div>
-                
-                <!-- Additional new arrivals would go here -->
             </div>
         </div>
-    </section>
+    </div>
+    <!-- MODAL AREA END -->
 
-    <!-- Newsletter -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h3>Subscribe to Our Newsletter</h3>
-                    <p class="mb-4">Get the latest updates on new releases, special offers, and more.</p>
-                    <form class="newsletter-form">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your Email Address" required>
-                            <button class="btn btn-light" type="submit">Subscribe</button>
-                        </div>
-                    </form
+    <!-- MODAL AREA START (Add To Cart Modal) -->
+    <div class="ltn__modal-area ltn__add-to-cart-modal-area">
+        <div class="modal fade" id="add_to_cart_modal" tabindex="-1">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="ltn__quick-view-modal-inner">
+                             <div class="modal-product-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="modal-product-img">
+                                            <img src="img/product/1.png" alt="#">
+                                        </div>
+                                         <div class="modal-product-info">
+                                            <h5><a href="product-details.html">Vegetables Juices</a></h5>
+                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Cart</p>
+                                            <div class="btn-wrapper">
+                                                <a href="cart.html" class="theme-btn-1 btn btn-effect-1">View Cart</a>
+                                                <a href="checkout.html" class="theme-btn-2 btn btn-effect-2">Checkout</a>
+                                            </div>
+                                         </div>
+                                         <!-- additional-info -->
+                                         <div class="additional-info d-none">
+                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
+                                            <div class="payment-method">
+                                                <img src="img/icons/payment.png" alt="#">
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL AREA END -->
+
+    <!-- MODAL AREA START (Wishlist Modal) -->
+    <div class="ltn__modal-area ltn__add-to-cart-modal-area">
+        <div class="modal fade" id="liton_wishlist_modal" tabindex="-1">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="ltn__quick-view-modal-inner">
+                             <div class="modal-product-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="modal-product-img">
+                                            <img src="img/product/7.png" alt="#">
+                                        </div>
+                                         <div class="modal-product-info">
+                                            <h5><a href="product-details.html">Vegetables Juices</a></h5>
+                                            <p class="added-cart"><i class="fa fa-check-circle"></i>  Successfully added to your Wishlist</p>
+                                            <div class="btn-wrapper">
+                                                <a href="wishlist.html" class="theme-btn-1 btn btn-effect-1">View Wishlist</a>
+                                            </div>
+                                         </div>
+                                         <!-- additional-info -->
+                                         <div class="additional-info d-none">
+                                            <p>We want to give you <b>10% discount</b> for your first order, <br>  Use discount code at checkout</p>
+                                            <div class="payment-method">
+                                                <img src="img/icons/payment.png" alt="#">
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL AREA END -->
+
+</div>
+<!-- Body main wrapper end -->
+
+    <!-- preloader area start -->
+    <div class="preloader d-none" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- All JS Plugins -->
+    <script src="js/plugins.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  
+</body>
+</html>
+
